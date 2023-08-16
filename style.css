@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: giroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ec566a62;
+    /*Jab bhi parent banao position  relative de diya karo  #D0D4D5 */
+    position: relative;
+}
+#nav{
+    height: 110px;
+    padding: 0 80px;
+    width: 100%;display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 35px;
+    margin-right: 170px;
+}
+#nav-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-prt1 h4{
+    margin-right: 60px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#nav-prt1 h4:hover{
+    color: coral;
+}
+#nav-prt2 i{
+    margin-right: 60px;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+}
+/*content section*/
+.content{
+    width: 100%;
+    height: calc(100% - 110px);
+    position: relative;
+    display: flex;
+
+}
+.left{
+    width: 40%;
+    height: 100%;
+
+    padding: 70px 150px;
+    
+}
+.left h5{
+    font-size: 24px;
+    color: #535353;
+    margin-bottom: 30px;
+}
+.left h1{
+    font-size: 39px;
+    line-height: 60px;
+    color: solid black;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.left p{
+    font-size: 15px;
+    color: solid black;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.left button{
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-top-left-radius: 0px;
+    border-radius: 50px;
+}
+/* right side section*/
+.right{
+    height: 100%;
+    width: 60%;
+    position: relative;
+    padding: 60px;
+    white-space: nowrap;
+    overflow-x: auto;/* isse jo scroll karne se side m bhag jata tha woh nahi hoga*/
+}
+.right::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 520px;
+    width: 380px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    margin-right: 5px;
+    display: inline-block;
+}
+.elem img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 15%;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #d0d4d5;
+    padding: 17px 34px;
+    border-radius: 6px;
+
+}
+.elem h4:hover{
+    background-color: coral;
+    color: #fff;
+}
+.elem h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: Black;
+    color: #fff;
+    padding: 17px 34px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.btn:hover{
+    color: #fff;
+    background-color: coral;
+}
